@@ -57,13 +57,21 @@ This is the Winloop repo (backend = Node + PostgreSQL, mobile = React Native Exp
 
 ## Push to GitHub (first time)
 
-Remote is set to `https://github.com/cemcatakk/Winloop.git`. From the project root run:
+Remote: `https://github.com/cemcatakk/Winloop.git`. Identity for this repo: **cemcatakk** / **cemtezgelenn@gmail.com** (set via `git config user.name` / `user.email`).
+
+**From your machine (Terminal), in the project root:**
 
 ```bash
+cd /Users/cemtezgelen/Desktop/Winloop
 git push -u origin main
 ```
 
-Use your GitHub credentials or SSH key. If the repo already has content (e.g. README), pull first: `git pull origin main --allow-unrelated-histories`, then push.
+- To use the **cemcatakk** account (not the one in GitHub Desktop), either:
+  - **HTTPS:** When prompted for password, use a [Personal Access Token](https://github.com/settings/tokens) (PAT) for cemcatakk, not your account password.
+  - **Or one-shot URL with PAT:**  
+    `git push https://cemcatakk:<YOUR_PAT>@github.com/cemcatakk/Winloop.git main`
+- If the remote repo already has a README etc., first:  
+  `git pull origin main --allow-unrelated-histories` then push.
 
 ---
 

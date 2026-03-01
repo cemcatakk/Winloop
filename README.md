@@ -55,6 +55,18 @@ This is the Winloop repo (backend = Node + PostgreSQL, mobile = React Native Exp
 
 ---
 
+## Push to GitHub (first time)
+
+Remote is set to `https://github.com/cemcatakk/Winloop.git`. From the project root run:
+
+```bash
+git push -u origin main
+```
+
+Use your GitHub credentials or SSH key. If the repo already has content (e.g. README), pull first: `git pull origin main --allow-unrelated-histories`, then push.
+
+---
+
 ## Links
 
 - **Repo:** [github.com/cemcatakk/Winloop](https://github.com/cemcatakk/Winloop)

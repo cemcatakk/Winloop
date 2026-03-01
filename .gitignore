@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+
+# Build and runtime
+dist/
+build/
+*.log
+npm-debug.log*
+.expo/
+.expo-shared/
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Uploads and temp
+backend/uploads/
+*.tmp
+*.temp
+
+# Optional: uncomment to exclude asset pack (if not shipping in repo)
+# 2D Pixel Dungeon Asset Pack/

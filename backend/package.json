@@ -1,0 +1,37 @@
+{
+  "name": "winloop-backend",
+  "version": "1.0.0",
+  "description": "Winloop API — Node.js + PostgreSQL",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "migrate": "node scripts/run-migrations.js",
+    "seed": "node scripts/seed.js",
+    "pm2:start": "npx pm2 start ecosystem.config.cjs",
+    "pm2:stop": "npx pm2 stop winloop-api",
+    "pm2:restart": "npx pm2 restart winloop-api",
+    "pm2:logs": "npx pm2 logs winloop-api",
+    "pm2:status": "npx pm2 status",
+    "kill-port": "lsof -ti:3100 | xargs kill -9 2>/dev/null || true"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "pm2": "^5.4.3"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.1.5",
+    "google-auth-library": "^9.15.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.12.0",
+    "uuid": "^9.0.1"
+  }
+}
